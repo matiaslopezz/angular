@@ -28,6 +28,7 @@
 
   <div fxFlex="40">
     <mat-list fxFlex *ngIf="dish">
+      <h3 *ngIf="dish">{{dish.name | uppercase}}</h3>
         <h1 matLine>Comments</h1>
         <mat-list-item *ngFor="let comment of dish.comments">                   
           <p matLine>
